@@ -8,7 +8,8 @@ export default function Product() {
                     <h2 className="page-title">Các sản phẩm của chúng tôi</h2>
                     <p className="home-subtitle-product">Đối tác chuyên nghiệp được Wedtech thẩm định năng lực.</p>
                 </div>
-                <button className="show-views">Xem tất cả</button>
+                <span className="show-views">Xem tất cả</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
             </div>
 
             <div className="product-grid">
@@ -80,7 +81,7 @@ export default function Product() {
 
                         {/* Description */}
                         <p className="product-card-desc">
-                            Lại Phương Hiền (Kho Đồ Cưới) là đơn vị uy tín chuyên bán sỉ và lẻ các loại đồ dùng, phụ kiện trang trí tiệc cưới và sự kiện chấ...
+                            Với hơn 10 năm kinh nghiệm trong lĩnh vực sản xuất loa, Fill Acoustic tự hào là đơn vị hàng đầu chuyên...
                         </p>
 
                         {/* CTA Button */}
