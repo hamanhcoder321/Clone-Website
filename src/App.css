@@ -6,10 +6,10 @@
 
 body {
   font-family: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: #f5f5f5;
   color: #333;
   line-height: 1.6;
@@ -23,7 +23,7 @@ body {
 
 .navbar {
   background-color: #FFFFFF;
-  border: 0 solid #e5e7eb;
+  border: 1px solid #e5e7eb;
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -32,8 +32,8 @@ body {
 
 .navbar-inner-wrapper {
   /* width: 100%; */
-  max-width: 1300px;  
-  margin: 0 auto;    
+  max-width: 1300px;
+  margin: 0 auto;
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
@@ -81,11 +81,11 @@ body {
   font-size: 18px;
   transition: color 0.2s;
   background-image: linear-gradient(90deg, #FF9F1C 0%, #FF3366 33%, #00B4D8 66%, #FF3366 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.navbar-brand img{
+.navbar-brand img {
   height: 45px;
   margin-right: 10px;
 }
@@ -119,18 +119,16 @@ body {
 .page {
   background: rgb(253, 252, 251);
   flex: 1;
-  padding: 0;
+  padding-top: 30px;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 2rem;
 }
 
 .page-title {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   color: #333;
 }
 
@@ -155,16 +153,25 @@ body {
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   color: #111827;
   letter-spacing: -0.01em;
 }
 
 .home-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: #80746B;
-  margin-bottom: 2rem;
-  max-width: 57rem;
+  margin-bottom: 3rem;
+  max-width: 35rem;
+  line-height: 1.6;
+}
+
+.home-subtitle-product {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #80746B;
+  max-width: 35rem;
   line-height: 1.6;
 }
 
@@ -193,13 +200,13 @@ body {
   align-items: center;
   gap: 10px;
   background: #ffffff;
-  border: 1.5px solid #ede9e9;
+  border: 0.5px solid #ede9e9;
   border-radius: 50px;
-  padding: 12px 20px;
+  padding: 12px 12px;
 }
 
 .hero-search-icon {
-  color: #9ca3af;
+  color: #FF5781;
   flex-shrink: 0;
 }
 
@@ -318,12 +325,24 @@ body {
 }
 
 /* Left column cards */
-.stat-card:nth-child(1) { margin-top: 0; margin-bottom: 14px; }
-.stat-card:nth-child(3) { margin-top: 0; }
+.stat-card:nth-child(1) {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.stat-card:nth-child(3) {
+  margin-top: 0;
+}
 
 /* Right column cards: shifted down */
-.stat-card:nth-child(2) { margin-top: 50px; margin-bottom: 14px; }
-.stat-card:nth-child(4) { margin-top: 0; }
+.stat-card:nth-child(2) {
+  margin-top: 50px;
+  margin-bottom: 14px;
+}
+
+.stat-card:nth-child(4) {
+  margin-top: 0;
+}
 
 .stat-header {
   display: flex;
@@ -361,23 +380,99 @@ body {
 }
 
 /* Static Card Colors */
-.stat-card-1 .stat-icon { background-color: rgba(247, 70, 101, 0.1); color: #f74665; }
-.stat-card-1 .stat-number { color: #f74665; }
+.stat-card-1 .stat-icon {
+  background-color: rgba(247, 70, 101, 0.1);
+  color: #f74665;
+}
 
-.stat-card-2 .stat-icon { background-color: rgba(245, 158, 11, 0.1); color: #f59e0b; }
-.stat-card-2 .stat-number { color: #f59e0b; }
+.stat-card-1 .stat-number {
+  color: #f74665;
+}
 
-.stat-card-3 .stat-icon { background-color: rgba(0, 180, 216, 0.1); color: #00b4d8; }
-.stat-card-3 .stat-number { color: #00b4d8; }
+.stat-card-2 .stat-icon {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
 
-.stat-card-4 .stat-icon { background-color: rgba(220, 38, 38, 0.1); color: #dc2626; }
-.stat-card-4 .stat-number { color: #dc2626; }
+.stat-card-2 .stat-number {
+  color: #f59e0b;
+}
 
+.stat-card-3 .stat-icon {
+  background-color: rgba(0, 180, 216, 0.1);
+  color: #00b4d8;
+}
+
+.stat-card-3 .stat-number {
+  color: #00b4d8;
+}
+
+.stat-card-4 .stat-icon {
+  background-color: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+.stat-card-4 .stat-number {
+  color: #dc2626;
+}
+
+/* ========================
+   Product Section Wrapper
+======================== */
+.product-section-wrapper {
+  width: 100%;
+  background: #f9f7f5;
+  border-top: 1px solid #f0ece8;
+  padding: 3rem 4rem;
+  max-width: 1560px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ========================
+   Product Section Header
+======================== */
+.product-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.show-views {
+  flex-shrink: 0;
+  background: transparent;
+  border: 1.5px solid #FF3366;
+  color: #FF3366;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: inherit;
+  padding: 9px 22px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.show-views:hover {
+  background: #FF3366;
+  color: #ffffff;
+}
+
+.home-subtitle-product {
+  font-size: 1rem;
+  color: #80746B;
+  font-weight: 500;
+  margin-top: 0.4rem;
+}
+
+/* ========================
+   Product Grid
+======================== */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
 }
 
 .product-card {
@@ -400,25 +495,106 @@ body {
 }
 
 .product-card-content {
-  padding: 1.5rem;
+  padding: 1.25rem 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
 .product-card-name {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  color: #333;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FF3366;
+  line-height: 1.35;
+  margin: 0;
 }
 
-.product-card-price {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #007bff;
-  margin-bottom: 1rem;
-}
-
-.product-card-actions {
+/* Rating + Location row */
+.product-card-meta {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.82rem;
+  color: #6b7280;
+}
+
+.product-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.product-card-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #6b7280;
+}
+
+/* Category Badge */
+.product-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.product-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #6b7280;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 4px 12px;
+  white-space: nowrap;
+}
+
+/* Description */
+.product-card-desc {
+  font-size: 0.88rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0.25rem 0 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* CTA Actions */
+.product-card-actions {
+  margin-top: 0.25rem;
+}
+
+/* Pink pill button */
+.btn-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 13px 24px;
+  background: #FF3366;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+  box-shadow: 0 4px 18px rgba(255, 51, 102, 0.3);
+}
+
+.btn-profile:hover {
+  background: #e6004a;
+  box-shadow: 0 6px 24px rgba(255, 51, 102, 0.45);
+  transform: translateY(-1px);
 }
 
 .product-detail {
@@ -754,7 +930,7 @@ body {
     min-height: auto;
     padding: 2.5rem 2rem;
   }
-  
+
   .home-hero-content {
     flex: 1 1 100%;
     max-width: 100%;
@@ -780,6 +956,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .navbar-container,
   .navbar-inner-wrapper {
     flex-direction: column;
@@ -825,7 +1002,7 @@ body {
     grid-template-columns: 1fr;
     gap: 16px;
   }
-  
+
   .stat-card:nth-child(2),
   .stat-card:nth-child(4) {
     margin-top: 0;
