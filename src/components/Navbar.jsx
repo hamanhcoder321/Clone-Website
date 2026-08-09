@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom"
+import wedtechLogo from "../assets/img/wedtech_logo.DaHkmgqQ.webp"
+
 export default function Navbar() {
     return (
         <nav className="navbar">
                     <div className="navbar-inner-wrapper">
                         <div className="navbar-links">
                             <Link to="/" className="navbar-brand">
-                                <img src="src/assets/img/wedtech_logo.DaHkmgqQ.webp"/>
+                                <img src={wedtechLogo} alt="WedTech Logo"/>
                             </Link>
                             <Link to="/suppliers" className="navbar-link">Nhà Cung cấp</Link>
                             <Link className="navbar-link">Đơn vị sự kiện</Link>
