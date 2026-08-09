@@ -8,8 +8,7 @@ export default function Product() {
                     <h2 className="page-title">Các sản phẩm của chúng tôi</h2>
                     <p className="home-subtitle-product">Đối tác chuyên nghiệp được Wedtech thẩm định năng lực.</p>
                 </div>
-                <span className="show-views">Xem tất cả</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                <span className="show-views">Xem tất cả <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></span>
             </div>
 
             <div className="product-grid">
