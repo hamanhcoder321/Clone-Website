@@ -442,9 +442,9 @@ body {
 .show-views {
   flex-shrink: 0;
   background: transparent;
-  border: 1.5px solid #FF3366;
+  /* border: 1.5px solid #FF3366; */
   color: #FF3366;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 600;
   font-family: inherit;
   padding: 9px 22px;
@@ -454,10 +454,7 @@ body {
   white-space: nowrap;
 }
 
-.show-views:hover {
-  background: #FF3366;
-  color: #ffffff;
-}
+
 
 .home-subtitle-product {
   font-size: 1rem;
