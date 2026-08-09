@@ -5,7 +5,7 @@ export default function Navbar() {
                     <div className="navbar-inner-wrapper">
                         <div className="navbar-links">
                             <Link to="/" className="navbar-brand">
-                                <img src="./src/assets/img/wedtech_logo.DaHkmgqQ.webp"/>
+                                <img src="src/assets/img/wedtech_logo.DaHkmgqQ.webp"/>
                             </Link>
                             <Link to="/suppliers" className="navbar-link">Nhà Cung cấp</Link>
                             <Link className="navbar-link">Đơn vị sự kiện</Link>
