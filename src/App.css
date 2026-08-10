@@ -23,7 +23,7 @@ body {
 
 .navbar {
   background-color: #FFFFFF;
-  border: 1px solid #e5e7eb;
+  /* border: 1px solid #e5e7eb; */
   padding: 1rem 0;
   position: sticky;
   top: 0;
