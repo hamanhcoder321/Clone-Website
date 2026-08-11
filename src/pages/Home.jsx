@@ -1,6 +1,7 @@
 import Product from "../components/Product";
 import { UsersIcon, StarIcon, CalendarIcon, MapIcon } from "../components/Icon.jsx";
 import Verified from "../components/Verified.jsx";
+import FeaturedProjects from "../components/FeaturedProjects.jsx";
 
 
 export default function Home() {
@@ -110,6 +111,10 @@ export default function Home() {
 
             <div className="product-section-wrapper-2">
                 <Verified/>
+            </div>
+
+            <div className="product-section-wrapper">
+                <FeaturedProjects />
             </div>
         </div>
     )

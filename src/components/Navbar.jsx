@@ -13,7 +13,7 @@ export default function Navbar() {
                     <Link className="navbar-link">Đơn vị sự kiện</Link>
                     <Link className="navbar-link">Dự án</Link>
                     <Link className="navbar-link">Sản phẩm</Link>
-                    <Link className="navbar-link-1">WedTech Show</Link>
+                    <Link to="https://wedtechshow.com/" className="navbar-link-1">WedTech Show</Link>
                 </div>
                 <div className="navbar-auth">
                     <div className="navbar-auth-links">
