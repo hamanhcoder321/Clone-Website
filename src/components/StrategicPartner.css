@@ -1,0 +1,95 @@
+.strategic-partner-banner {
+  background: linear-gradient(100deg, #ff2a5f 0%, #00b4d8 100%);
+  border-radius: 20px;
+  padding: 4.5rem 2rem;
+  text-align: center;
+  margin: 3rem 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.strategic-partner-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.strategic-partner-title {
+  color: #ffffff;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 1.2rem;
+}
+
+.strategic-partner-subtitle {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.strategic-partner-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.btn-find-partner,
+.btn-explore-projects {
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  line-height: 1.5;
+  text-align: center;
+  min-width: 260px;
+}
+
+.btn-find-partner {
+  background-color: #ffffff;
+  color: #ff2a5f;
+  border: 1px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-find-partner:hover {
+  background-color: #fcfcfc;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-explore-projects {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.btn-explore-projects:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+  border-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .strategic-partner-banner {
+    padding: 3rem 1.5rem;
+  }
+
+  .strategic-partner-title {
+    font-size: 2rem;
+  }
+  
+  .strategic-partner-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-find-partner,
+  .btn-explore-projects {
+    width: 100%;
+    min-width: auto;
+    max-width: 320px;
+  }
+}

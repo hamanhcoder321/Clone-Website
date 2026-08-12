@@ -39,6 +39,14 @@ body {
   color: #333;
 }
 
+.page-Categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #333;
+}
+
 /* --- Trang chi tiết sản phẩm --- */
 .product-detail {
   display: grid;

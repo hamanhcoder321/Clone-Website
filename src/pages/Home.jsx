@@ -6,6 +6,8 @@ import FeaturedProjects from "../components/FeaturedProjects.jsx";
 import SectionWrapper from "../components/SectionWrapper.jsx";
 import StatCard from "../components/StatCard.jsx";
 import ProductsServices from "../components/ProductsServices.jsx";
+import { Categories } from "../components/Categories.jsx";
+import StrategicPartner from "../components/StrategicPartner.jsx";
 
 
 export default function Home() {
@@ -70,6 +72,14 @@ export default function Home() {
 
             <SectionWrapper>
                 <ProductsServices />
+            </SectionWrapper>
+
+            <SectionWrapper>
+                <Categories />
+            </SectionWrapper>
+            
+            <SectionWrapper>
+                <StrategicPartner />
             </SectionWrapper>
         </div>
     )

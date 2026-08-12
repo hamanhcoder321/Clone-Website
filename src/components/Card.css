@@ -29,6 +29,14 @@
   margin-bottom: 2rem;
 }
 
+/*Categories*/
+.product-section-Categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
 .home-subtitle-product {
   font-size: 1rem;
   color: #80746B;
@@ -100,7 +108,7 @@
   overflow: hidden;
   transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   background: #fff;
-  border-radius: 10px;
+  border-radius: 18px;
   box-shadow: 0 6px 8px rgba(17, 17, 17, 0.123);
   display: flex;
   flex-direction: column;
