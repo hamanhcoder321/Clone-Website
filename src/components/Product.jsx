@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import weddingitems from "../assets/img/aFtXE3fzempyFekt1PfPF.png"
+import "./Card.css"
 import SOUNDLIGHTING from "../assets/img/mDsqS1h16oKSSlMDQ1Dcn.png"
 import GREENSOUNDGROUP from "../assets/img/BWTHxvc5zEIo5hrp3GaYl.jpg"
 import Homies from "../assets/img/QKc6coSH6Nu7FGb_5ykNE.png"
@@ -50,7 +51,7 @@ export default function Product() {
                             </div>
 
                             {/* Description */}
-                            <p className="product-card-desc">
+                            <p className="product-card-desc" style={{ WebkitLineClamp: 3 }}>
                                 Lại Phương Hiền (Kho Đồ Cưới) là đơn vị uy tín chuyên bán sỉ và lẻ các loại đồ dùng, phụ kiện trang trí tiệc cưới và sự kiện chấ...
                             </p>
 
@@ -95,7 +96,7 @@ export default function Product() {
                             </div>
 
                             {/* Description */}
-                            <p className="product-card-desc">
+                            <p className="product-card-desc" style={{ WebkitLineClamp: 3 }}>
                                 Với hơn 10 năm kinh nghiệm trong lĩnh vực sản xuất loa, Fill Acoustic tự hào là đơn vị hàng đầu chuyên...
                             </p>
 
@@ -140,7 +141,7 @@ export default function Product() {
                             </div>
 
                             {/* Description */}
-                            <p className="product-card-desc">
+                            <p className="product-card-desc" style={{ WebkitLineClamp: 3 }}>
                                 G.Sound cung cấp các sản phẩm âm thanh chuyên nghiệp, đáp ứng đa dạng nhu cầu từ sự kiện nhỏ
                             </p>
 
@@ -185,7 +186,7 @@ export default function Product() {
                             </div>
 
                             {/* Description */}
-                            <p className="product-card-desc">
+                            <p className="product-card-desc" style={{ WebkitLineClamp: 3 }}>
                                 Homies Live Việt Nam chuyên cung cấp các loại đèn LED trang trí dành cho nội thất và công...
                             </p>
 

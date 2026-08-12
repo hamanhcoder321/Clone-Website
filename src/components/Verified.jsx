@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import TECHSMART from "../assets/img/ivqgKqe_eEds2q8RC6Jrg.jpg"
+import "./Card.css"
 import Nabigeta from "../assets/img/DcLMhnS45zowHC-SUv6Aq.jpg"
 export default function Verified () {
     return(
@@ -49,7 +50,7 @@ export default function Verified () {
                             </div>
 
                             {/* Description */}
-                            <p className="product-card-desc">
+                            <p className="product-card-desc" style={{ WebkitLineClamp: 3 }}>
                                 TECHSMART – CHUYÊN CUNG CẤP GIẢI PHÁP LASER & 3D MAPPING CHUYÊN NGHIỆP 🔥
                                 ✨ Cung cấp và cho thuê:
                                 ✅ Laser (Lazer) hiệu ứng sân khấu
@@ -106,7 +107,7 @@ export default function Verified () {
                             </div>
 
                             {/* Description */}
-                            <p className="product-card-desc">
+                            <p className="product-card-desc" style={{ WebkitLineClamp: 3 }}>
                                 Nabigeta Việt Nam – Thương hiệu uy tín được chứng thực bởi Tạp chí Sở hữu trí tuệ và Sáng tạo
                                 Với mục tiêu "TẤT CẢ các showroom, gian hàng triển lãm tại Việt Nam đều được thiết kế chỉn chu, bắt kịp xu hướng của thế giới" cùng kinh nghiệm hơn 10 năm hoạt động trong lĩnh vực thiết kế, thi công gian hàng triển lãm và showroom, Nabigeta Việt Nam luôn là cái tên đầu tiên được nhắc đến trong danh sách các công ty thiết kế – thi công CHẤT LƯỢNG NHẤT tại Việt Nam.
 

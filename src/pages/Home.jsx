@@ -1,7 +1,10 @@
 import Product from "../components/Product";
 import { UsersIcon, StarIcon, CalendarIcon, MapIcon } from "../components/Icon.jsx";
+import "./Home.css";
 import Verified from "../components/Verified.jsx";
 import FeaturedProjects from "../components/FeaturedProjects.jsx";
+import SectionWrapper from "../components/SectionWrapper.jsx";
+import StatCard from "../components/StatCard.jsx";
 
 
 export default function Home() {
@@ -35,87 +38,34 @@ export default function Home() {
                     <div className="hero-categories">
                         <span className="hero-categories-label">Phổ biến:</span>
                         <div className="hero-categories-list">
-                            <span className="hero-category-tag">Hoa & Decor</span>
-                            <span className="hero-category-tag">Vật tư & Vật liệu</span>
-                            <span className="hero-category-tag">Nhà rạp & Kết cấu</span>
-                            <span className="hero-category-tag">Nội thất sự kiện</span>
-                            <span className="hero-category-tag">LED & Trình chiếu</span>
+                            {["Hoa & Decor", "Vật tư & Vật liệu", "Nhà rạp & Kết cấu", "Nội thất sự kiện", "LED & Trình chiếu"].map((cat, idx) => (
+                                <span key={idx} className="hero-category-tag">{cat}</span>
+                            ))}
                         </div>
                     </div>
                 </div>
                 
                 <div className="home-hero-stats">
                     <div className="stats-grid">
-                        <div className="stat-card stat-card-1">
-                            <div className="stat-header">
-                                <div className="stat-icon">
-                                    <UsersIcon />
-                                </div>
-                                <div className="stat-number">
-                                    2.500+
-                                </div>
-                            </div>
-                            <div className="stat-title">
-                                Nhà cung cấp đã xác thực
-                            </div>
-                        </div>
-
-                        <div className="stat-card stat-card-2">
-                            <div className="stat-header">
-                                <div className="stat-icon">
-                                    <StarIcon />
-                                </div>
-                                <div className="stat-number">
-                                    850
-                                </div>
-                            </div>
-                            <div className="stat-title">
-                                Đơn vị đã xác thực
-                            </div>
-                        </div>
-
-                        <div className="stat-card stat-card-3">
-                            <div className="stat-header">
-                                <div className="stat-icon">
-                                    <CalendarIcon />
-                                </div>
-                                <div className="stat-number">
-                                    12.000+
-                                </div>
-                            </div>
-                            <div className="stat-title">
-                                Sự kiện thành công
-                            </div>
-                        </div>
-
-                        <div className="stat-card stat-card-4">
-                            <div className="stat-header">
-                                <div className="stat-icon">
-                                    <MapIcon />
-                                </div>
-                                <div className="stat-number">
-                                    34
-                                </div>
-                            </div>
-                            <div className="stat-title">
-                                Tỉnh thành toàn quốc
-                            </div>
-                        </div>
+                        <StatCard icon={UsersIcon} number="2.500+" title="Nhà cung cấp đã xác thực" index={1} />
+                        <StatCard icon={StarIcon} number="850" title="Đơn vị đã xác thực" index={2} />
+                        <StatCard icon={CalendarIcon} number="12.000+" title="Sự kiện thành công" index={3} />
+                        <StatCard icon={MapIcon} number="34" title="Tỉnh thành toàn quốc" index={4} />
                     </div>
                 </div>
             </div>
 
-            <div className="product-section-wrapper">
+            <SectionWrapper>
                 <Product/>
-            </div>
+            </SectionWrapper>
 
-            <div className="product-section-wrapper-2">
+            <SectionWrapper variant={2}>
                 <Verified/>
-            </div>
+            </SectionWrapper>
 
-            <div className="product-section-wrapper">
+            <SectionWrapper>
                 <FeaturedProjects />
-            </div>
+            </SectionWrapper>
         </div>
     )
 }

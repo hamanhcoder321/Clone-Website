@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import wedtechLogo from "../assets/img/wedtech_logo.DaHkmgqQ.webp"
+import "./Navbar.css"
 
 export default function Navbar() {
     return (
