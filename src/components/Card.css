@@ -16,7 +16,7 @@
 }
 
 .view-width {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -116,7 +116,7 @@
   width: 100%;
   height: 250px;
   object-fit: cover;
-  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: transform .7s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
 }
 
@@ -267,6 +267,108 @@
 .product-card-actions {
   margin-top: 0;
 }
+
+/* --- New styles for Product Card Update --- */
+.product-card-vendor-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #6b7280;
+  gap: 10px;
+  /* Thêm khoảng cách giữa vendor và rating */
+}
+
+.product-card-vendor {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  color: #4b5563;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  /* Cho phép phần vendor co giãn chiếm không gian còn lại */
+  min-width: 0;
+  /* Quan trọng để text-overflow hoạt động trong flexbox */
+}
+
+.product-card-vendor svg {
+  flex-shrink: 0;
+  /* Không cho icon bị thu nhỏ */
+}
+
+.product-card-rating-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #f59e0b;
+  font-weight: 600;
+  flex-shrink: 0;
+  /* Không cho phần rating bị thu nhỏ khi tên vendor quá dài */
+}
+
+.product-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.product-card-spacer {
+  flex-grow: 1;
+}
+
+.product-card-divider {
+  border-top: 1px solid #f8f8f8;
+  margin: 12px 0
+}
+
+.product-card-price-moq {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.product-card-price-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-price-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.product-price-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.product-moq-value {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.btn-profile-arrow {
+  margin-left: 4px;
+  transition: transform 0.2s;
+}
+
+.btn-profile:hover .btn-profile-arrow {
+  transform: translateX(3px);
+}
+
 
 .product-image-label {
   position: absolute;

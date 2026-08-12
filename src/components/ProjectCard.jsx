@@ -36,14 +36,14 @@ export default function ProjectCard({ data }) {
 
                 {/* Category Badges */}
                 <div className="product-card-badges">
-                    {data.badges.map((badgeItem, idx) => {
+                    {data.badges?.map((badgeItem, idx) => {
                         if (Array.isArray(badgeItem)) {
                             return (
                                 <div key={idx} style={{ display: 'flex', flexWrap: 'nowrap', gap: '2px', width: '55%' }}>
-                                    {badgeItem.map((b, i) => (
+                                    {badgeItem.map((bage, i) => (
                                         <span key={i} className="product-badge">
-                                            <img src={b.img} alt={b.label} />
-                                            {b.label}
+                                            <img src={bage.img} alt={bage.label} />
+                                            {bage.label}
                                         </span>
                                     ))}
                                 </div>
@@ -66,11 +66,11 @@ export default function ProjectCard({ data }) {
                 {/* Call to Action */}
                 <div className="product-card-actions">
                     <Link className="btn-profile" to={data.link || ""}>
-                        XEM HỒ SƠ
-                        <svg className="btn-profile-showview" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                        XEM CHI TIẾT
                     </Link>
                 </div>
             </div>
         </div>
     );
 }
+

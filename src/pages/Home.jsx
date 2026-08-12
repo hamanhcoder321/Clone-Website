@@ -5,6 +5,7 @@ import Verified from "../components/Verified.jsx";
 import FeaturedProjects from "../components/FeaturedProjects.jsx";
 import SectionWrapper from "../components/SectionWrapper.jsx";
 import StatCard from "../components/StatCard.jsx";
+import ProductsServices from "../components/ProductsServices.jsx";
 
 
 export default function Home() {
@@ -65,6 +66,10 @@ export default function Home() {
 
             <SectionWrapper>
                 <FeaturedProjects />
+            </SectionWrapper>
+
+            <SectionWrapper>
+                <ProductsServices />
             </SectionWrapper>
         </div>
     )
