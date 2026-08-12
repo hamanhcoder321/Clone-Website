@@ -19,6 +19,7 @@ export default function Product() {
                 <div className="product-grid">
                     {/* khối product 1 */}
                     <div className="product-card">
+                        <span className="product-image-authenticate">Đã xác thực</span>
                         <img src={weddingitems} alt="Lại Phương Hiền" className="product-card-image" />
                         <div className="product-card-content">
                             <h3 className="product-card-name">Lại Phương Hiền (Kho Đồ Cưới)</h3>
@@ -30,7 +31,7 @@ export default function Product() {
                                     <span>10.0 (0)</span>
                                 </span>
                                 <span className="product-card-location">
-                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6b7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
                                     <span>Hà Nội</span>
                                 </span>
                             </div>
@@ -64,6 +65,7 @@ export default function Product() {
                     </div>
                     {/* khối product 2 */}
                     <div className="product-card">
+                        <span className="product-image-authenticate">Đã xác thực</span>
                         <img src={SOUNDLIGHTING} alt="Lại Phương Hiền" className="product-card-image" />
                         <div className="product-card-content">
                             <h3 className="product-card-name">Công ty TNHH CÔNG NGHỆ ÂM THANH ÁNH SÁNG H&A VIỆT NAM</h3>
@@ -75,7 +77,7 @@ export default function Product() {
                                     <span>10.0 (0)</span>
                                 </span>
                                 <span className="product-card-location">
-                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6b7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
                                     <span>Hà Nội</span>
                                 </span>
                             </div>
@@ -108,6 +110,7 @@ export default function Product() {
                     </div>
                     {/* khối product 3 */}
                     <div className="product-card">
+                        <span className="product-image-authenticate">Đã xác thực</span>
                         <img src={GREENSOUNDGROUP} alt="Lại Phương Hiền" className="product-card-image" />
                         <div className="product-card-content">
                             <h3 className="product-card-name">CÔNG TY TNHH GREEN SOUND GROUP</h3>
@@ -119,7 +122,7 @@ export default function Product() {
                                     <span>10.0 (0)</span>
                                 </span>
                                 <span className="product-card-location">
-                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6b7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
                                     <span>Hồ Chí Minh</span>
                                 </span>
                             </div>
@@ -152,6 +155,7 @@ export default function Product() {
                     </div>
                     {/* khối product 4 */}
                     <div className="product-card">
+                        <span className="product-image-authenticate">Đã xác thực</span>
                         <img src={Homies} alt="Lại Phương Hiền" className="product-card-image" />
                         <div className="product-card-content">
                             <h3 className="product-card-name">Công ty TNHH Homies Live Viet Nam</h3>
@@ -163,7 +167,7 @@ export default function Product() {
                                     <span>10.0 (0)</span>
                                 </span>
                                 <span className="product-card-location">
-                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6b7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
                                     <span>Hải Phòng</span>
                                 </span>
                             </div>
