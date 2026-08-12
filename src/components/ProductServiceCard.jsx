@@ -3,7 +3,7 @@ import "./Card.css";
 
 export default function ProductServiceCard({ data }) {
     return (
-        <div className="product-card">
+        <div className="product-card product-service-card">
             <img src={data.image} alt={data.name} className="product-card-image" />
             
             <div className="product-card-content">
