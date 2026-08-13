@@ -6,6 +6,7 @@ import FeaturedProjects from "../components/home/FeaturedProjects.jsx";
 import ProductsServices from "../components/home/ProductsServices.jsx";
 import { Categories } from "../components/home/Categories.jsx";
 import StrategicPartner from "../components/home/StrategicPartner.jsx";
+import Evaluate from "../components/home/Evaluate.jsx";
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <ProductsServices />
             <Categories />
             <StrategicPartner />
+            <Evaluate/>
         </div>
     )
 }

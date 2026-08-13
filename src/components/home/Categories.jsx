@@ -1,4 +1,5 @@
 import styles from "./Categories.module.css";
+import cardStyles from "../cards/Card.module.css";
 import SectionWrapper from "../common/SectionWrapper.jsx";
 
 const categoriesData = [
@@ -22,8 +23,8 @@ const categoriesData = [
 
 export function Categories() {
     return(
-        <SectionWrapper>
-            <div className={`view-width ${styles['categories-wrapper']}`}>
+        <SectionWrapper bgColor="#F8F9FA">
+            <div className={`${cardStyles['view-width']} ${styles['categories-wrapper']}`}>
                 <div className={styles['categories-header']}>
                     <h2 className={styles['page-Categories']}>Danh mục ngành</h2>
                     <p className={styles['home-subtitle-product']}>Mọi mắt xích của ngành cưới và sự kiện đều được kết nối tại một nền tảng.</p>
@@ -50,4 +51,4 @@ export function Categories() {
             </div>
         </SectionWrapper>
     )
-}
+}

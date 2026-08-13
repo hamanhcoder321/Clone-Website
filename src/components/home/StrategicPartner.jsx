@@ -1,10 +1,11 @@
 import styles from "./StrategicPartner.module.css";
+import cardStyles from "../cards/Card.module.css";
 import SectionWrapper from "../common/SectionWrapper.jsx";
 
 export default function StrategicPartner() {
     return (
         <SectionWrapper>
-            <div className="view-width">
+            <div className={`${cardStyles['view-width']}`}>
                 <div className={styles['strategic-partner-banner']}>
                     <div className={styles['strategic-partner-content']}>
                         <h2 className={styles['strategic-partner-title']}>Tìm đối tác phù hợp cho dự án<br />tiếp theo?</h2>

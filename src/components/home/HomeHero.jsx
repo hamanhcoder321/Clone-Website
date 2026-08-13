@@ -1,4 +1,3 @@
-import React from "react";
 import { UsersIcon, StarIcon, CalendarIcon, MapIcon } from "../common/Icon.jsx";
 import StatCard from "../cards/StatCard.jsx";
 
