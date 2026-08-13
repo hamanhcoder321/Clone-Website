@@ -83,3 +83,10 @@
     padding-right: 0;
   }
 }
+
+/* Ẩn Footer trên Mobile để nhường chỗ cho Bottom Nav */
+@media (max-width: 768px) {
+  .footer-container {
+    display: none;
+  }
+}

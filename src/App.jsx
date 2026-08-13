@@ -3,6 +3,7 @@ import Navbar from './pages/Navbar.jsx'
 import './App.css'
 import Home from './pages/Home.jsx'
 import Footer from './components/common/Footer.jsx'
+import MobileBottomNav from './components/common/MobileBottomNav.jsx'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
         </Routes>
         <Footer />
+        <MobileBottomNav />
       </div>
     </>
   )

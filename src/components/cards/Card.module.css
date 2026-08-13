@@ -16,7 +16,7 @@
 }
 
 .view-width {
-  max-width: 1400px;
+  max-width: 1230px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -38,7 +38,7 @@
 }
 
 .home-subtitle-product {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #80746B;
   font-weight: 500;
   margin-top: 0.4rem;
@@ -462,6 +462,7 @@
   }
 
   .home-subtitle-product {
+    font-size: 1rem;
     max-width: 100%;
   }
 

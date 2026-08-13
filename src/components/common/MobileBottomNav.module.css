@@ -1,0 +1,94 @@
+/* Mặc định ẩn trên Desktop */
+.mobile-bottom-nav {
+  display: none;
+}
+
+/* Chỉ hiển thị trên Mobile */
+@media (max-width: 768px) {
+  .mobile-bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    padding: 10px 15px 5px 15px; /* Padding dưới nhỏ hơn vì có text */
+    z-index: 1000;
+    height: 65px; /* Chiều cao cố định */
+  }
+
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #8a8a8f; /* Màu xám nhạt cho icon không active */
+    width: 20%;
+    gap: 4px;
+    position: relative;
+    transition: color 0.2s;
+  }
+
+  .nav-text {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    margin-bottom: 2px;
+  }
+
+  /* Định dạng Icon chung */
+  .nav-icon {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* === HIỆU ỨNG NÚT TRANG CHỦ NỔI === */
+  .nav-item-center-wrapper {
+    position: relative;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-item.active {
+    color: #ff2a5f; /* Màu đỏ hồng chủ đạo */
+  }
+
+  .nav-item-center-circle {
+    position: absolute;
+    top: -28px; /* Đẩy nút trồi lên trên thanh */
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.06);
+    text-decoration: none;
+    color: #ff2a5f; /* Luôn sáng màu hồng */
+  }
+
+  .nav-item-center-circle .nav-icon {
+    width: 26px;
+    height: 26px;
+    margin-bottom: -2px; 
+  }
+
+  .nav-item-center-circle .nav-text {
+    margin-top: 3px;
+    font-weight: 600;
+    font-size: 11px;
+    white-space: nowrap; /* Ngăn chữ rớt dòng */
+  }
+}
