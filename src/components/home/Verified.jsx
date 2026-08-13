@@ -1,32 +1,33 @@
 import { Link } from "react-router-dom"
-import TECHSMART from "../assets/img/ivqgKqe_eEds2q8RC6Jrg.jpg"
-import "./Card.css"
-import Nabigeta from "../assets/img/DcLMhnS45zowHC-SUv6Aq.jpg"
+import TECHSMART from "../../assets/img/ivqgKqe_eEds2q8RC6Jrg.jpg"
+import styles from "../cards/Card.module.css"
+import Nabigeta from "../../assets/img/DcLMhnS45zowHC-SUv6Aq.jpg"
+import SectionWrapper from "../common/SectionWrapper.jsx"
 export default function Verified () {
     return(
-        <>
-            <div className="view-width">
-                <div className="product-section-header">
+        <SectionWrapper variant={2}>
+            <div className={`${styles['view-width']}`}>
+                <div className={`${styles['product-section-header']}`}>
                     <div>
                         <h2 className="page-title">Đơn vị sự kiện chất lượng</h2>
-                        <p className="home-subtitle-product">Năng lực triển khai đã được kiểm chứng qua hàng nghìn dự án lớn nhỏ.</p>
+                        <p className={`${styles['home-subtitle-product']}`}>Năng lực triển khai đã được kiểm chứng qua hàng nghìn dự án lớn nhỏ.</p>
                     </div>
-                    <span className="show-views">Xem tất cả <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></span>
+                    <span className={`${styles['show-views']}`}>Xem tất cả <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></span>
                 </div>
-                <div className="product-grid-2">
+                <div className={`${styles['product-grid-2']}`}>
                     {/* khối product 1 */}
-                    <div className="product-card-2">
-                        <img src={TECHSMART} alt="Lại Phương Hiền" className="product-card-image" />
-                        <div className="product-card-content-2">
-                            <h3 className="product-card-name">CÔNG TY CỔ PHẦN TECHSMART</h3>
+                    <div className={`${styles['product-card-2']}`}>
+                        <img src={TECHSMART} alt="Lại Phương Hiền" className={`${styles['product-card-image']}`} />
+                        <div className={`${styles['product-card-content-2']}`}>
+                            <h3 className={`${styles['product-card-name']}`}>CÔNG TY CỔ PHẦN TECHSMART</h3>
 
                             {/* Rating + Location */}
-                            <div className="product-card-meta">
-                                <span className="product-card-rating">
+                            <div className={`${styles['product-card-meta']}`}>
+                                <span className={`${styles['product-card-rating']}`}>
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" strokeWidth="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
                                     <span>10.0 (0)</span>
                                 </span>
-                                <span className="product-card-location">
+                                <span className={`${styles['product-card-location']}`}>
                                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
                                     <span>Hà Nội</span>
                                 </span>
@@ -37,20 +38,20 @@ export default function Verified () {
                             </div>
 
                             {/* Category Badge */}
-                            <div className="product-card-badges">
-                                <span className="product-badge">
+                            <div className={`${styles['product-card-badges']}`}>
+                                <span className={`${styles['product-badge']}`}>
                                     <img src="https://media.wedtech.vn/wedtech/public/categories/giai-tri-nhan-su-bieu-dien.svg" />
                                     GIẢI TRÍ & NHÂN SỰ BIỂU DIỄN
                                 </span>
                                 {/* Thẻ rỗng */}
-                                <span className="product-badge" style={{ visibility: "hidden" }}>
+                                <span className={`${styles['product-badge']}`} style={{ visibility: "hidden" }}>
                                     <img src="https://media.wedtech.vn/wedtech/public/categories/giai-tri-nhan-su-bieu-dien.svg" alt="hidden" />
                                     Ẩn
                                 </span>
                             </div>
 
                             {/* Description */}
-                            <p className="product-card-desc" style={{ WebkitLineClamp: 3 }}>
+                            <p className={`${styles['product-card-desc']}`} style={{ WebkitLineClamp: 3 }}>
                                 TECHSMART – CHUYÊN CUNG CẤP GIẢI PHÁP LASER & 3D MAPPING CHUYÊN NGHIỆP 🔥
                                 ✨ Cung cấp và cho thuê:
                                 ✅ Laser (Lazer) hiệu ứng sân khấu
@@ -67,27 +68,27 @@ export default function Verified () {
                             </p>
 
                             {/* CTA Button */}
-                            <div className="product-card-actions">
-                                <Link className="btn-profile" to="">
+                            <div className={`${styles['product-card-actions']}`}>
+                                <Link className={`${styles['btn-profile']}`} to="">
                                     XEM HỒ SƠ
-                                    <svg className="btn-profile-showview" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                                    <svg className={`${styles['btn-profile-showview']}`} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
                                 </Link>
                             </div>
                         </div>
                     </div>
                     {/* khối product 2 */}
-                    <div className="product-card-2">
-                        <img src={Nabigeta} alt="Lại Phương Hiền" className="product-card-image" />
-                        <div className="product-card-content-2">
-                            <h3 className="product-card-name">Nabigeta Viet Nam</h3>
+                    <div className={`${styles['product-card-2']}`}>
+                        <img src={Nabigeta} alt="Lại Phương Hiền" className={`${styles['product-card-image']}`} />
+                        <div className={`${styles['product-card-content-2']}`}>
+                            <h3 className={`${styles['product-card-name']}`}>Nabigeta Viet Nam</h3>
 
                             {/* Rating + Location */}
-                            <div className="product-card-meta">
-                                <span className="product-card-rating">
+                            <div className={`${styles['product-card-meta']}`}>
+                                <span className={`${styles['product-card-rating']}`}>
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" strokeWidth="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
                                     <span>10.0 (0)</span>
                                 </span>
-                                <span className="product-card-location">
+                                <span className={`${styles['product-card-location']}`}>
                                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
                                     <span>Hà Nội</span>
                                 </span>
@@ -98,8 +99,8 @@ export default function Verified () {
                             </div>
 
                             {/* Category Badge */}
-                            <div className="product-card-badges">
-                                <span className="product-badge">
+                            <div className={`${styles['product-card-badges']}`}>
+                                <span className={`${styles['product-badge']}`}>
                                     <img src="https://media.wedtech.vn/wedtech/public/categories/hoa-decor.svg" />
                                     HOA & DECOR
                                 </span>
@@ -107,7 +108,7 @@ export default function Verified () {
                             </div>
 
                             {/* Description */}
-                            <p className="product-card-desc" style={{ WebkitLineClamp: 3 }}>
+                            <p className={`${styles['product-card-desc']}`} style={{ WebkitLineClamp: 3 }}>
                                 Nabigeta Việt Nam – Thương hiệu uy tín được chứng thực bởi Tạp chí Sở hữu trí tuệ và Sáng tạo
                                 Với mục tiêu "TẤT CẢ các showroom, gian hàng triển lãm tại Việt Nam đều được thiết kế chỉn chu, bắt kịp xu hướng của thế giới" cùng kinh nghiệm hơn 10 năm hoạt động trong lĩnh vực thiết kế, thi công gian hàng triển lãm và showroom, Nabigeta Việt Nam luôn là cái tên đầu tiên được nhắc đến trong danh sách các công ty thiết kế – thi công CHẤT LƯỢNG NHẤT tại Việt Nam.
 
@@ -115,16 +116,16 @@ export default function Verified () {
                             </p>
 
                             {/* CTA Button */}
-                            <div className="product-card-actions">
-                                <Link className="btn-profile" to="">
+                            <div className={`${styles['product-card-actions']}`}>
+                                <Link className={`${styles['btn-profile']}`} to="">
                                     XEM HỒ SƠ
-                                    <svg className="btn-profile-showview" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                                    <svg className={`${styles['btn-profile-showview']}`} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
                                 </Link>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+        </SectionWrapper>
     )
 }

@@ -74,11 +74,12 @@
 
 @media (max-width: 768px) {
   .strategic-partner-banner {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.05rem;
   }
 
   .strategic-partner-title {
-    font-size: 2rem;
+    max-width: 800px;
+    font-size: 1.05rem;
   }
   
   .strategic-partner-actions {

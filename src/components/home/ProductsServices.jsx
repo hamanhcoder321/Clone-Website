@@ -1,8 +1,10 @@
-import DragonPearlCave from "../assets/img/LwKJroO4srXHF_v_bvzj8.jpeg"
-import VinhVerseConcert from "../assets/img/h_AlrFY_etA8dQvlSU-Vt.png"
-import GREENSOUNDGROUP from "../assets/img/yd5_mThcuXUBVNA2DWOzd.png"
-import Homies from "../assets/img/StbqDkgoj62tjiJ4X0COc.png"
-import ProductServiceCard from "./ProductServiceCard.jsx"
+import DragonPearlCave from "../../assets/img/LwKJroO4srXHF_v_bvzj8.jpeg"
+import VinhVerseConcert from "../../assets/img/h_AlrFY_etA8dQvlSU-Vt.png"
+import GREENSOUNDGROUP from "../../assets/img/yd5_mThcuXUBVNA2DWOzd.png"
+import Homies from "../../assets/img/StbqDkgoj62tjiJ4X0COc.png"
+import ProductServiceCard from "../cards/ProductServiceCard.jsx"
+import styles from "../cards/Card.module.css"
+import SectionWrapper from "../common/SectionWrapper.jsx"
 
 const projectsData = [
     {
@@ -61,26 +63,28 @@ const projectsData = [
 
 export default function ProductsServices() {
     return (
-        <div className="view-width">
-            <div className="product-section-header">
-                <div>
-                    <h2 className="page-title">Sản phẩm và dịch vụ tiêu biểu</h2>
-                    <p className="home-subtitle-product">Giải pháp trọn gói từ đối tác đã xác thực, tối ưu chi phí cho doanh nghiệp.</p>
+        <SectionWrapper>
+            <div className={`${styles['view-width']}`}>
+                <div className={`${styles['product-section-header']}`}>
+                    <div>
+                        <h2 className="page-title">Sản phẩm và dịch vụ tiêu biểu</h2>
+                        <p className={`${styles['home-subtitle-product']}`}>Giải pháp trọn gói từ đối tác đã xác thực, tối ưu chi phí cho doanh nghiệp.</p>
+                    </div>
+                    <span className={`${styles['show-views']}`}>
+                        Xem tất cả
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </span>
                 </div>
-                <span className="show-views">
-                    Xem tất cả
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                        <polyline points="12 5 19 12 12 19" />
-                    </svg>
-                </span>
-            </div>
 
-            <div className="product-grid">
-                {projectsData.map((project, index) => (
-                    <ProductServiceCard key={index} data={project} />
-                ))}
+                <div className={`${styles['product-grid']}`}>
+                    {projectsData.map((project, index) => (
+                        <ProductServiceCard key={index} data={project} />
+                    ))}
+                </div>
             </div>
-        </div>
+        </SectionWrapper>
     )
 }
